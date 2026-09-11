@@ -3,7 +3,7 @@
 A one-minute, top-down game based on the supplied design document. Carry the fragile sunflower through a shuffled set of house rooms, avoid furniture and cobwebs, and reach the only sunlit windowsill before time expires.
 
 ## Run
-
+https://blongtato.github.io/BloomGame/
 Open `index.html` in any modern desktop browser. No install or build step is required.
 
 ## Controls
