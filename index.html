@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#282017" />
+    <title>Bloom Before Dark</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud" aria-label="Game status">
+        <div class="brand"><span class="brand-petal">✦</span><span>Bloom <em>Before Dark</em></span></div>
+        <div class="timer-wrap">
+          <span class="timer-label">SUNFLOWER'S LIFE</span>
+          <div class="timer-track"><div id="timerFill" class="timer-fill"></div></div>
+          <strong id="timer">1:00</strong>
+        </div>
+        <div class="room-count"><span>ROOM</span><strong id="roomNumber">1 / 5</strong></div>
+      </header>
+
+      <section class="game-stage" aria-label="Bloom Before Dark game">
+        <canvas id="game" width="1100" height="680" aria-label="Use arrow keys or WASD to carry the sunflower to the window"></canvas>
+        <div id="startScreen" class="overlay intro">
+          <div class="card">
+            <span class="eyebrow">A 60 SECOND HOUSE RUN</span>
+            <h1>Bloom <i>Before Dark</i></h1>
+            <p>Carry the fragile sunflower through the house. Find the one windowsill before its last light fades.</p>
+            <div class="controls"><span>WASD</span><span>or</span><span>ARROW KEYS</span><small>to move</small></div>
+            <button id="startButton">Bring it to the light <b>→</b></button>
+          </div>
+        </div>
+        <div id="endScreen" class="overlay hidden" aria-live="polite"></div>
+      </section>
+
+      <footer><span>DON'T LET THE PETALS FALL</span><span>•</span><span>FIND THE LIGHT</span></footer>
+    </main>
+    <script src="./game.js"></script>
+  </body>
+</html>
